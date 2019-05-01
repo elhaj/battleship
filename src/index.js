@@ -1,6 +1,16 @@
-const lodash = require('lodash');
+const AWS = require('aws-sdk');
 
 exports.handler = (event, ctx, callback) => {
-    console.log(lodash.chunk([1, 2, 3, 4], 2));
-    callback(undefined, 1234);
+    var params = {
+        TableName: 'Test',
+        Key: {
+            Id: '1'
+        }
+    };
+    var documentClient = new AWS.DynamoDB.DocumentClient();
+
+    documentClient.get(params, function (err, data) {
+        if (err) console.log(err);
+        else callback(undefined, data);
+    });
 };

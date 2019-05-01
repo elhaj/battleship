@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/elhaj/battleship#readme",
   "dependencies": {
-    "lodash": "4.17.11"
+    "aws-sdk": "2.446.0"
   }
 }

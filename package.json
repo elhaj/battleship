@@ -1,0 +1,22 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "Let's go to war",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhaj/battleship.git"
+  },
+  "author": "sidi kwaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elhaj/battleship/issues"
+  },
+  "homepage": "https://github.com/elhaj/battleship#readme",
+  "dependencies": {
+    "lodash": "4.17.11"
+  }
+}
